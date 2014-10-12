@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E8FE41B19EA1DB4002FE187 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE41A19EA1DB4002FE187 /* main.m */; };
+		5E8FE41E19EA1DB4002FE187 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE41D19EA1DB4002FE187 /* AppDelegate.m */; };
+		5E8FE42119EA1DB4002FE187 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE42019EA1DB4002FE187 /* GameScene.m */; };
+		5E8FE42319EA1DB4002FE187 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FE42219EA1DB4002FE187 /* GameScene.sks */; };
+		5E8FE42619EA1DB4002FE187 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE42519EA1DB4002FE187 /* GameViewController.m */; };
+		5E8FE42919EA1DB4002FE187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FE42719EA1DB4002FE187 /* Main.storyboard */; };
+		5E8FE42B19EA1DB4002FE187 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FE42A19EA1DB4002FE187 /* Images.xcassets */; };
+		5E8FE42E19EA1DB4002FE187 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FE42C19EA1DB4002FE187 /* LaunchScreen.xib */; };
+		5E8FE43A19EA1DB4002FE187 /* MathTasticTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE43919EA1DB4002FE187 /* MathTasticTests.m */; };
+		5E8FE45C19EA1E90002FE187 /* MathProblemGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE45519EA1E90002FE187 /* MathProblemGenerator.m */; };
+		5E8FE45D19EA1E90002FE187 /* QuestionAnswerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE45719EA1E90002FE187 /* QuestionAnswerScene.m */; };
+		5E8FE45E19EA1E90002FE187 /* TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE45919EA1E90002FE187 /* TextField.m */; };
+		5E8FE45F19EA1E90002FE187 /* FMMParallaxNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE45A19EA1E90002FE187 /* FMMParallaxNode.m */; };
+		5E8FE46219EA1EF1002FE187 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE46119EA1EF1002FE187 /* MyScene.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E8FE43419EA1DB4002FE187 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E8FE40D19EA1DB4002FE187 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E8FE41419EA1DB4002FE187;
+			remoteInfo = MathTastic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E8FE41519EA1DB4002FE187 /* MathTastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathTastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8FE41919EA1DB4002FE187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8FE41A19EA1DB4002FE187 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E8FE41C19EA1DB4002FE187 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E8FE41D19EA1DB4002FE187 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E8FE41F19EA1DB4002FE187 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		5E8FE42019EA1DB4002FE187 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		5E8FE42219EA1DB4002FE187 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		5E8FE42419EA1DB4002FE187 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		5E8FE42519EA1DB4002FE187 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		5E8FE42819EA1DB4002FE187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E8FE42A19EA1DB4002FE187 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5E8FE42D19EA1DB4002FE187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5E8FE43319EA1DB4002FE187 /* MathTasticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathTasticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8FE43819EA1DB4002FE187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E8FE43919EA1DB4002FE187 /* MathTasticTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathTasticTests.m; sourceTree = "<group>"; };
+		5E8FE45419EA1E90002FE187 /* MathProblemGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathProblemGenerator.h; sourceTree = "<group>"; };
+		5E8FE45519EA1E90002FE187 /* MathProblemGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathProblemGenerator.m; sourceTree = "<group>"; };
+		5E8FE45619EA1E90002FE187 /* QuestionAnswerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionAnswerScene.h; sourceTree = "<group>"; };
+		5E8FE45719EA1E90002FE187 /* QuestionAnswerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionAnswerScene.m; sourceTree = "<group>"; };
+		5E8FE45819EA1E90002FE187 /* TextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextField.h; sourceTree = "<group>"; };
+		5E8FE45919EA1E90002FE187 /* TextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextField.m; sourceTree = "<group>"; };
+		5E8FE45A19EA1E90002FE187 /* FMMParallaxNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMParallaxNode.m; sourceTree = "<group>"; };
+		5E8FE45B19EA1E90002FE187 /* FMMParallaxNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMParallaxNode.h; sourceTree = "<group>"; };
+		5E8FE46019EA1EF1002FE187 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		5E8FE46119EA1EF1002FE187 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E8FE41219EA1DB4002FE187 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E8FE43019EA1DB4002FE187 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E8FE40C19EA1DB4002FE187 = {
+			isa = PBXGroup;
+			children = (
+				5E8FE41719EA1DB4002FE187 /* MathTastic */,
+				5E8FE43619EA1DB4002FE187 /* MathTasticTests */,
+				5E8FE41619EA1DB4002FE187 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E8FE41619EA1DB4002FE187 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E8FE41519EA1DB4002FE187 /* MathTastic.app */,
+				5E8FE43319EA1DB4002FE187 /* MathTasticTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E8FE41719EA1DB4002FE187 /* MathTastic */ = {
+			isa = PBXGroup;
+			children = (
+				5E8FE46019EA1EF1002FE187 /* MyScene.h */,
+				5E8FE46119EA1EF1002FE187 /* MyScene.m */,
+				5E8FE45419EA1E90002FE187 /* MathProblemGenerator.h */,
+				5E8FE45519EA1E90002FE187 /* MathProblemGenerator.m */,
+				5E8FE45619EA1E90002FE187 /* QuestionAnswerScene.h */,
+				5E8FE45719EA1E90002FE187 /* QuestionAnswerScene.m */,
+				5E8FE45819EA1E90002FE187 /* TextField.h */,
+				5E8FE45919EA1E90002FE187 /* TextField.m */,
+				5E8FE45A19EA1E90002FE187 /* FMMParallaxNode.m */,
+				5E8FE45B19EA1E90002FE187 /* FMMParallaxNode.h */,
+				5E8FE44319EA1E84002FE187 /* Art */,
+				5E8FE41C19EA1DB4002FE187 /* AppDelegate.h */,
+				5E8FE41D19EA1DB4002FE187 /* AppDelegate.m */,
+				5E8FE41F19EA1DB4002FE187 /* GameScene.h */,
+				5E8FE42019EA1DB4002FE187 /* GameScene.m */,
+				5E8FE42219EA1DB4002FE187 /* GameScene.sks */,
+				5E8FE42419EA1DB4002FE187 /* GameViewController.h */,
+				5E8FE42519EA1DB4002FE187 /* GameViewController.m */,
+				5E8FE42719EA1DB4002FE187 /* Main.storyboard */,
+				5E8FE42A19EA1DB4002FE187 /* Images.xcassets */,
+				5E8FE42C19EA1DB4002FE187 /* LaunchScreen.xib */,
+				5E8FE41819EA1DB4002FE187 /* Supporting Files */,
+			);
+			path = MathTastic;
+			sourceTree = "<group>";
+		};
+		5E8FE41819EA1DB4002FE187 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E8FE41919EA1DB4002FE187 /* Info.plist */,
+				5E8FE41A19EA1DB4002FE187 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E8FE43619EA1DB4002FE187 /* MathTasticTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E8FE43919EA1DB4002FE187 /* MathTasticTests.m */,
+				5E8FE43719EA1DB4002FE187 /* Supporting Files */,
+			);
+			path = MathTasticTests;
+			sourceTree = "<group>";
+		};
+		5E8FE43719EA1DB4002FE187 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E8FE43819EA1DB4002FE187 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E8FE44319EA1E84002FE187 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E8FE41419EA1DB4002FE187 /* MathTastic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E8FE43D19EA1DB4002FE187 /* Build configuration list for PBXNativeTarget "MathTastic" */;
+			buildPhases = (
+				5E8FE41119EA1DB4002FE187 /* Sources */,
+				5E8FE41219EA1DB4002FE187 /* Frameworks */,
+				5E8FE41319EA1DB4002FE187 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MathTastic;
+			productName = MathTastic;
+			productReference = 5E8FE41519EA1DB4002FE187 /* MathTastic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E8FE43219EA1DB4002FE187 /* MathTasticTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E8FE44019EA1DB4002FE187 /* Build configuration list for PBXNativeTarget "MathTasticTests" */;
+			buildPhases = (
+				5E8FE42F19EA1DB4002FE187 /* Sources */,
+				5E8FE43019EA1DB4002FE187 /* Frameworks */,
+				5E8FE43119EA1DB4002FE187 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E8FE43519EA1DB4002FE187 /* PBXTargetDependency */,
+			);
+			name = MathTasticTests;
+			productName = MathTasticTests;
+			productReference = 5E8FE43319EA1DB4002FE187 /* MathTasticTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E8FE40D19EA1DB4002FE187 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Andrew Conk";
+				TargetAttributes = {
+					5E8FE41419EA1DB4002FE187 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					5E8FE43219EA1DB4002FE187 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 5E8FE41419EA1DB4002FE187;
+					};
+				};
+			};
+			buildConfigurationList = 5E8FE41019EA1DB4002FE187 /* Build configuration list for PBXProject "MathTastic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E8FE40C19EA1DB4002FE187;
+			productRefGroup = 5E8FE41619EA1DB4002FE187 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E8FE41419EA1DB4002FE187 /* MathTastic */,
+				5E8FE43219EA1DB4002FE187 /* MathTasticTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E8FE41319EA1DB4002FE187 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E8FE42E19EA1DB4002FE187 /* LaunchScreen.xib in Resources */,
+				5E8FE42B19EA1DB4002FE187 /* Images.xcassets in Resources */,
+				5E8FE42319EA1DB4002FE187 /* GameScene.sks in Resources */,
+				5E8FE42919EA1DB4002FE187 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E8FE43119EA1DB4002FE187 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E8FE41119EA1DB4002FE187 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E8FE46219EA1EF1002FE187 /* MyScene.m in Sources */,
+				5E8FE45D19EA1E90002FE187 /* QuestionAnswerScene.m in Sources */,
+				5E8FE42619EA1DB4002FE187 /* GameViewController.m in Sources */,
+				5E8FE45E19EA1E90002FE187 /* TextField.m in Sources */,
+				5E8FE45C19EA1E90002FE187 /* MathProblemGenerator.m in Sources */,
+				5E8FE41E19EA1DB4002FE187 /* AppDelegate.m in Sources */,
+				5E8FE42119EA1DB4002FE187 /* GameScene.m in Sources */,
+				5E8FE41B19EA1DB4002FE187 /* main.m in Sources */,
+				5E8FE45F19EA1E90002FE187 /* FMMParallaxNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E8FE42F19EA1DB4002FE187 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E8FE43A19EA1DB4002FE187 /* MathTasticTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E8FE43519EA1DB4002FE187 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E8FE41419EA1DB4002FE187 /* MathTastic */;
+			targetProxy = 5E8FE43419EA1DB4002FE187 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E8FE42719EA1DB4002FE187 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E8FE42819EA1DB4002FE187 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E8FE42C19EA1DB4002FE187 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E8FE42D19EA1DB4002FE187 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E8FE43B19EA1DB4002FE187 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E8FE43C19EA1DB4002FE187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E8FE43E19EA1DB4002FE187 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MathTastic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E8FE43F19EA1DB4002FE187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MathTastic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5E8FE44119EA1DB4002FE187 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MathTasticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathTastic.app/MathTastic";
+			};
+			name = Debug;
+		};
+		5E8FE44219EA1DB4002FE187 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MathTasticTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathTastic.app/MathTastic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E8FE41019EA1DB4002FE187 /* Build configuration list for PBXProject "MathTastic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E8FE43B19EA1DB4002FE187 /* Debug */,
+				5E8FE43C19EA1DB4002FE187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E8FE43D19EA1DB4002FE187 /* Build configuration list for PBXNativeTarget "MathTastic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E8FE43E19EA1DB4002FE187 /* Debug */,
+				5E8FE43F19EA1DB4002FE187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E8FE44019EA1DB4002FE187 /* Build configuration list for PBXNativeTarget "MathTasticTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E8FE44119EA1DB4002FE187 /* Debug */,
+				5E8FE44219EA1DB4002FE187 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E8FE40D19EA1DB4002FE187 /* Project object */;
+}
