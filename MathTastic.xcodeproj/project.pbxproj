@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E22051A19FB8679005013CB /* sea-turtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22051819FB8679005013CB /* sea-turtle.png */; };
+		5E22051B19FB8679005013CB /* red-rocket.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22051919FB8679005013CB /* red-rocket.png */; };
+		5E22053F19FB92F1005013CB /* anchor.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053219FB92F1005013CB /* anchor.svg.med.png */; };
+		5E22054019FB92F1005013CB /* blue-fish_.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053319FB92F1005013CB /* blue-fish_.svg.med.png */; };
+		5E22054119FB92F1005013CB /* clownfish.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053419FB92F1005013CB /* clownfish.svg.med.png */; };
+		5E22054219FB92F1005013CB /* fishing-pole-md.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053519FB92F1005013CB /* fishing-pole-md.png */; };
+		5E22054319FB92F1005013CB /* pescetto.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053619FB92F1005013CB /* pescetto.svg.med.png */; };
+		5E22054419FB92F1005013CB /* plain-fish.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053719FB92F1005013CB /* plain-fish.svg.med.png */; };
+		5E22054519FB92F1005013CB /* red-fish.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053819FB92F1005013CB /* red-fish.svg.med.png */; };
+		5E22054619FB92F1005013CB /* red-starfish.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053919FB92F1005013CB /* red-starfish.svg.med.png */; };
+		5E22054719FB92F1005013CB /* seahorse.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053A19FB92F1005013CB /* seahorse.svg.med.png */; };
+		5E22054819FB92F1005013CB /* seaweed.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053B19FB92F1005013CB /* seaweed.svg.med.png */; };
+		5E22054919FB92F1005013CB /* snail-shell.svg.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053C19FB92F1005013CB /* snail-shell.svg.thumb.png */; };
+		5E22054A19FB92F1005013CB /* Swordfish.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053D19FB92F1005013CB /* Swordfish.svg.med.png */; };
+		5E22054B19FB92F1005013CB /* yellow-fish.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053E19FB92F1005013CB /* yellow-fish.svg.med.png */; };
 		5E8FE41B19EA1DB4002FE187 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE41A19EA1DB4002FE187 /* main.m */; };
 		5E8FE41E19EA1DB4002FE187 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE41D19EA1DB4002FE187 /* AppDelegate.m */; };
 		5E8FE42119EA1DB4002FE187 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE42019EA1DB4002FE187 /* GameScene.m */; };
@@ -34,6 +49,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E22051819FB8679005013CB /* sea-turtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sea-turtle.png"; sourceTree = "<group>"; };
+		5E22051919FB8679005013CB /* red-rocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-rocket.png"; sourceTree = "<group>"; };
+		5E22053219FB92F1005013CB /* anchor.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anchor.svg.med.png; sourceTree = "<group>"; };
+		5E22053319FB92F1005013CB /* blue-fish_.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-fish_.svg.med.png"; sourceTree = "<group>"; };
+		5E22053419FB92F1005013CB /* clownfish.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clownfish.svg.med.png; sourceTree = "<group>"; };
+		5E22053519FB92F1005013CB /* fishing-pole-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fishing-pole-md.png"; sourceTree = "<group>"; };
+		5E22053619FB92F1005013CB /* pescetto.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pescetto.svg.med.png; sourceTree = "<group>"; };
+		5E22053719FB92F1005013CB /* plain-fish.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plain-fish.svg.med.png"; sourceTree = "<group>"; };
+		5E22053819FB92F1005013CB /* red-fish.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-fish.svg.med.png"; sourceTree = "<group>"; };
+		5E22053919FB92F1005013CB /* red-starfish.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-starfish.svg.med.png"; sourceTree = "<group>"; };
+		5E22053A19FB92F1005013CB /* seahorse.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seahorse.svg.med.png; sourceTree = "<group>"; };
+		5E22053B19FB92F1005013CB /* seaweed.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seaweed.svg.med.png; sourceTree = "<group>"; };
+		5E22053C19FB92F1005013CB /* snail-shell.svg.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snail-shell.svg.thumb.png"; sourceTree = "<group>"; };
+		5E22053D19FB92F1005013CB /* Swordfish.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swordfish.svg.med.png; sourceTree = "<group>"; };
+		5E22053E19FB92F1005013CB /* yellow-fish.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow-fish.svg.med.png"; sourceTree = "<group>"; };
 		5E8FE41519EA1DB4002FE187 /* MathTastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathTastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8FE41919EA1DB4002FE187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E8FE41A19EA1DB4002FE187 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -156,6 +186,21 @@
 		5E8FE44319EA1E84002FE187 /* Art */ = {
 			isa = PBXGroup;
 			children = (
+				5E22053219FB92F1005013CB /* anchor.svg.med.png */,
+				5E22053319FB92F1005013CB /* blue-fish_.svg.med.png */,
+				5E22053419FB92F1005013CB /* clownfish.svg.med.png */,
+				5E22053519FB92F1005013CB /* fishing-pole-md.png */,
+				5E22053619FB92F1005013CB /* pescetto.svg.med.png */,
+				5E22053719FB92F1005013CB /* plain-fish.svg.med.png */,
+				5E22053819FB92F1005013CB /* red-fish.svg.med.png */,
+				5E22053919FB92F1005013CB /* red-starfish.svg.med.png */,
+				5E22053A19FB92F1005013CB /* seahorse.svg.med.png */,
+				5E22053B19FB92F1005013CB /* seaweed.svg.med.png */,
+				5E22053C19FB92F1005013CB /* snail-shell.svg.thumb.png */,
+				5E22053D19FB92F1005013CB /* Swordfish.svg.med.png */,
+				5E22053E19FB92F1005013CB /* yellow-fish.svg.med.png */,
+				5E22051819FB8679005013CB /* sea-turtle.png */,
+				5E22051919FB8679005013CB /* red-rocket.png */,
 			);
 			path = Art;
 			sourceTree = "<group>";
@@ -241,9 +286,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E8FE42E19EA1DB4002FE187 /* LaunchScreen.xib in Resources */,
+				5E22054B19FB92F1005013CB /* yellow-fish.svg.med.png in Resources */,
+				5E22054319FB92F1005013CB /* pescetto.svg.med.png in Resources */,
+				5E22054019FB92F1005013CB /* blue-fish_.svg.med.png in Resources */,
+				5E22054A19FB92F1005013CB /* Swordfish.svg.med.png in Resources */,
 				5E8FE42B19EA1DB4002FE187 /* Images.xcassets in Resources */,
 				5E8FE42319EA1DB4002FE187 /* GameScene.sks in Resources */,
 				5E8FE42919EA1DB4002FE187 /* Main.storyboard in Resources */,
+				5E22054919FB92F1005013CB /* snail-shell.svg.thumb.png in Resources */,
+				5E22054819FB92F1005013CB /* seaweed.svg.med.png in Resources */,
+				5E22054419FB92F1005013CB /* plain-fish.svg.med.png in Resources */,
+				5E22051A19FB8679005013CB /* sea-turtle.png in Resources */,
+				5E22054119FB92F1005013CB /* clownfish.svg.med.png in Resources */,
+				5E22054619FB92F1005013CB /* red-starfish.svg.med.png in Resources */,
+				5E22054219FB92F1005013CB /* fishing-pole-md.png in Resources */,
+				5E22054719FB92F1005013CB /* seahorse.svg.med.png in Resources */,
+				5E22054519FB92F1005013CB /* red-fish.svg.med.png in Resources */,
+				5E22053F19FB92F1005013CB /* anchor.svg.med.png in Resources */,
+				5E22051B19FB8679005013CB /* red-rocket.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

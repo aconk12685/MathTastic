@@ -47,7 +47,8 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
         //self.backgroundColor = [SKColor blackColor];
         [self initalizingScrollingBackground:size];
         [self addShip];
-
+        [self addSeaTurtle];
+        
         //Making self delegate of physics World
         self.physicsWorld.gravity = CGVectorMake(0,0);
         self.physicsWorld.contactDelegate = self;
@@ -81,6 +82,29 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
         actionMoveDown = [SKAction moveByX:0 y:-30 duration:.2];
 
         [self addChild:ship];
+}
+
+-(void)addSeaTurtle
+{
+    //initalizing spaceship node
+    ship = [SKSpriteNode spriteNodeWithImageNamed:@"sea-turtle"];
+    [ship setScale:0.25];
+    //ship.zRotation = - M_PI / 2;
+    
+    
+    //Adding SpriteKit physicsBody for collision detection
+    ship.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:ship.size];
+    ship.physicsBody.categoryBitMask = shipCategory;
+    ship.physicsBody.dynamic = YES;
+    ship.physicsBody.contactTestBitMask = obstacleCategory;
+    ship.physicsBody.collisionBitMask = 0;
+    ship.physicsBody.usesPreciseCollisionDetection = YES;
+    ship.name = @"seaturtle";
+    ship.position = CGPointMake(120,100);
+    actionMoveUp = [SKAction moveByX:0 y:30 duration:.2];
+    actionMoveDown = [SKAction moveByX:0 y:-30 duration:.2];
+    
+    [self addChild:ship];
 }
 
 -(void)addMissile
