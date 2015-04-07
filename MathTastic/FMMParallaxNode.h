@@ -1,10 +1,9 @@
 //
 //  FMMParallaxNode.h
-//  SpaceShooter
+//  MathTastic
 //
-//  Created by Tony Dahbura on 9/9/13.
-//  Copyright (c) 2013 fullmoonmanor. All rights reserved.
-//
+//  Created by Andrew Conk on 10/25/14.
+//  Copyright (c) 2014 Andrew Conk. All rights reserved.
 
 #import <SpriteKit/SpriteKit.h>
 

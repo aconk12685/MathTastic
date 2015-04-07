@@ -1,35 +1,21 @@
 //
 //  MyScene.m
-//  GameTutorial
+//  MathTastic
 //
-//  Created by MEGHA GULATI on 10/26/13.
-//  Copyright (c) 2013 MEGHA GULATI. All rights reserved.
-//
+//  Created by Andrew Conk on 10/25/14.
+//  Copyright (c) 2014 Andrew Conk. All rights reserved.
+
 
 #import "MyScene.h"
-#import "QuestionAnswerScene.h"
 
 static const uint32_t shipCategory =  0x1 << 0;
 static const uint32_t obstacleCategory =  0x1 << 1;
 
-static const float BG_VELOCITY = 100.0;
 static const float OBJECT_VELOCITY = 160.0;
-
-static inline CGPoint CGPointAdd(const CGPoint a, const CGPoint b)
-{
-    return CGPointMake(a.x + b.x, a.y + b.y);
-}
-
-static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
-{
-    return CGPointMake(a.x * b, a.y * b);
-}
-
 
 @implementation MyScene{
 
     SKSpriteNode *ship;
-    SKSpriteNode *ship2;
     SKAction *actionMoveUp;
     SKAction *actionMoveDown;
 
@@ -44,29 +30,27 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
 
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
-        //self.backgroundColor = [SKColor blackColor];
+        [super initBaseContent];
         [self initalizingScrollingBackground:size];
         [self addShip];
-        [self addSeaTurtle];
         
         //Making self delegate of physics World
         self.physicsWorld.gravity = CGVectorMake(0,0);
         self.physicsWorld.contactDelegate = self;
         
-        
-        
-        
+        super.correctAnswersLabel.text = [NSString stringWithFormat:@"%d correct answers", [UserGameData getInstance].currentUser.numberOfCorrectAnswers];
+        super.incorrectAnswersLabel.text = [NSString stringWithFormat:@"%d wrong answers", [UserGameData getInstance].currentUser.numberOfIncorrectAnswers];
+        super.numberOfCollisionsLabel.text = [NSString stringWithFormat:@"%d collisions", [UserGameData getInstance].currentUser.numberOfCollisions];
     }
 
     return self;
 }
 
-
--(void)addShip
-{
+-(void)addShip{
         //initalizing spaceship node
         ship = [SKSpriteNode spriteNodeWithImageNamed:@"red-rocket"];
-        [ship setScale:0.25];
+        [ship setScale:0.75];
+        ship.size = CGSizeMake(100, 50);
         ship.zRotation = - M_PI / 2;
     
         //Adding SpriteKit physicsBody for collision detection
@@ -77,42 +61,19 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
         ship.physicsBody.collisionBitMask = 0;
         ship.physicsBody.usesPreciseCollisionDetection = YES;
         ship.name = @"ship";
-        ship.position = CGPointMake(120,160);
+        ship.position = CGPointMake(120,100);
         actionMoveUp = [SKAction moveByX:0 y:30 duration:.2];
         actionMoveDown = [SKAction moveByX:0 y:-30 duration:.2];
-
+    
         [self addChild:ship];
 }
 
--(void)addSeaTurtle
-{
-    //initalizing spaceship node
-    ship = [SKSpriteNode spriteNodeWithImageNamed:@"sea-turtle"];
-    [ship setScale:0.25];
-    //ship.zRotation = - M_PI / 2;
-    
-    
-    //Adding SpriteKit physicsBody for collision detection
-    ship.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:ship.size];
-    ship.physicsBody.categoryBitMask = shipCategory;
-    ship.physicsBody.dynamic = YES;
-    ship.physicsBody.contactTestBitMask = obstacleCategory;
-    ship.physicsBody.collisionBitMask = 0;
-    ship.physicsBody.usesPreciseCollisionDetection = YES;
-    ship.name = @"seaturtle";
-    ship.position = CGPointMake(120,100);
-    actionMoveUp = [SKAction moveByX:0 y:30 duration:.2];
-    actionMoveDown = [SKAction moveByX:0 y:-30 duration:.2];
-    
-    [self addChild:ship];
-}
-
--(void)addMissile
-{
+-(void)addMissile{
     //initalizing spaceship node
     SKSpriteNode *missile;
     missile = [SKSpriteNode spriteNodeWithImageNamed:@"red-missile.png"];
-    [missile setScale:0.15];
+    missile.size = CGSizeMake(100, 100);
+    [missile setScale:0.75];
     
     //Adding SpriteKit physicsBody for collision detection
     missile.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:missile.size];
@@ -124,7 +85,7 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     missile.name = @"missile";
     
     //selecting random y position for missile
-    int r = arc4random() % 500;
+    int r = arc4random_uniform(self.scene.size.height);
     missile.position = CGPointMake(self.frame.size.width + 20,r);
 
     [self addChild:missile];
@@ -135,19 +96,17 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     CGPoint touchLocation = [touch locationInNode:self.scene];
     [self selectNodeForTouch: touchLocation];
 }
-     - (void)selectNodeForTouch:(CGPoint)touchLocation {
-         //1
-         SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:touchLocation];
+
+- (void)selectNodeForTouch:(CGPoint)touchLocation {
+    SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:touchLocation];
+    
+    if(![_selectedNode isEqual:touchedNode]
+       && [[touchedNode name] isEqualToString:@"ship"]) {
+        [_selectedNode removeAllActions];
+        _selectedNode = touchedNode;
+    }
          
-         //2
-         if(![_selectedNode isEqual:touchedNode]) {
-             [_selectedNode removeAllActions];
-             [_selectedNode runAction:[SKAction rotateToAngle:0.0f duration:0.1]];
-             
-             _selectedNode = touchedNode;
-         }
-         
-     }
+}
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch = [touches anyObject];
@@ -193,41 +152,18 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
                                                      pointsPerSecondSpeed:25.0];
         _parallaxSpaceDust.position = CGPointMake(0, 0);
         [self addChild:_parallaxSpaceDust];
-        
-    
- //   }
-    
 }
 
-- (void)moveBg
-{
-    [self enumerateChildNodesWithName:@"bg" usingBlock: ^(SKNode *node, BOOL *stop)
-     {
-         SKSpriteNode * bg = (SKSpriteNode *) node;
-         CGPoint bgVelocity = CGPointMake(-BG_VELOCITY, 0);
-         CGPoint amtToMove = CGPointMultiplyScalar(bgVelocity,_dt);
-         bg.position = CGPointAdd(bg.position, amtToMove);
-         
-         //Checks if bg node is completely scrolled of the screen, if yes then put it at the end of the other node
-         if (bg.position.x <= -bg.size.width)
-         {
-             bg.position = CGPointMake(bg.position.x + bg.size.width*2,
-                                       bg.position.y);
-         }
-     }];
-}
-
-- (void)moveObstacle
-{
+- (void)moveObstacle{
     NSArray *nodes = self.children;//1
     
     for(SKNode * node in nodes){
         if ([node.name  isEqual: @"missile"]) {
             SKSpriteNode *ob = (SKSpriteNode *) node;
             CGPoint obVelocity = CGPointMake(-OBJECT_VELOCITY, 0);
-            CGPoint amtToMove = CGPointMultiplyScalar(obVelocity,_dt);
+            CGPoint amtToMove = [SpriteKitCommon CGPointMultiplyScalar:obVelocity timesB:_dt];
             
-            ob.position = CGPointAdd(ob.position, amtToMove);
+            ob.position = [SpriteKitCommon CGPointAdd:ob.position toB:amtToMove];
             if(ob.position.x < -100)
             {
                 [ob removeFromParent];
@@ -248,24 +184,20 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     }
     _lastUpdateTime = currentTime;
     
-    if( currentTime - _lastMissileAdded > .25)
+    if( currentTime - _lastMissileAdded > 0)
     {
         _lastMissileAdded = currentTime + 1;
             [self addMissile];
     }
 
-    
-    //[self moveBg];
     [self moveObstacle];
 
     [_parallaxSpaceDust update:currentTime];
     [_parallaxNodeBackgrounds update:currentTime];
-    
 }
 
 
-- (void)didBeginContact:(SKPhysicsContact *)contact
-{
+- (void)didBeginContact:(SKPhysicsContact *)contact{
     SKPhysicsBody *firstBody, *secondBody;
     if (contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask)
     {
@@ -281,9 +213,11 @@ static inline CGPoint CGPointMultiplyScalar(const CGPoint a, const CGFloat b)
     if ((firstBody.categoryBitMask & shipCategory) != 0 &&
         (secondBody.categoryBitMask & obstacleCategory) != 0)
     {
+        [UserGameData getInstance].currentUser.numberOfCollisions++;
         [ship removeFromParent];
         SKTransition *reveal = [SKTransition flipHorizontalWithDuration:0.5];
-        SKScene * questionAnswerScene = [[QuestionAnswerScene alloc] initWithSize:self.size];
+        QuestionAnswerScene * questionAnswerScene = [[QuestionAnswerScene alloc] initWithSize:self.size];
+        questionAnswerScene.sceneToDisplay = self;
         [self.view presentScene:questionAnswerScene transition: reveal];
 
     }

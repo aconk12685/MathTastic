@@ -7,25 +7,15 @@
 #import "MyScene.h"
 #import "TextField.h"
 #import "MathProblemGenerator.h"
+#import "MathProblem.h"
+#import "OceanScene.h"
 
 @implementation QuestionAnswerScene
 
-TextField * mathProblemAnswer;
 MathProblemGenerator * mathProblemGenerator;
+MathProblem * currentMathProblem;
 
 -(void)didMoveToView:(SKView *)view{
-    mathProblemAnswer = [[TextField alloc] initWithFrame:CGRectMake(340, 80, 50, 20)];
-    mathProblemAnswer.backgroundColor = [SKColor whiteColor];
-    mathProblemAnswer.textColor = [SKColor blackColor];
-    mathProblemAnswer.keyboardType = UIKeyboardTypeNumberPad;
-    mathProblemAnswer.clearButtonMode = UITextFieldViewModeWhileEditing;
-    
-    [self.view addSubview:mathProblemAnswer];
-    
-}
-
--(void)delegateMethod:(UITextField *) textField
-{
     
 }
 
@@ -33,64 +23,75 @@ MathProblemGenerator * mathProblemGenerator;
     if (self = [super initWithSize:size]) {
         
         // 1
-        //self.backgroundColor = [SKColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
-        self.backgroundColor = [SKColor blackColor];
+       // self.backgroundColor = [SKColor colorWithRed:100.0 green:100.0 blue:1.0 alpha:1.0];
+        self.backgroundColor = [SKColor greenColor];
         // 2
-        NSString * message;
-        message = @"Solve the math problem to keep going...";
+        int16_t space = 50;
         // 3
         SKLabelNode *label = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-        label.text = message;
-        label.fontSize = 12;
+        label.text = @"Solve the math problem to keep going...";
         label.fontColor = [SKColor whiteColor];
-        label.position = CGPointMake(self.size.width/2, 260);
+        label.fontSize = 30;
+        label.yScale = 2;
+        label.position = CGPointMake(self.size.width/2, self.size.height/2 + (5*space));
         [self addChild:label];
         
         mathProblemGenerator = [MathProblemGenerator alloc];
-        
-        NSString * mathProblem;
-        mathProblem = [mathProblemGenerator getMathProblem];
+        currentMathProblem = [mathProblemGenerator getMathProblem];
         SKLabelNode *mathProblemLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-        mathProblemLabel.text = mathProblem;
+        mathProblemLabel.text = currentMathProblem.question;
         mathProblemLabel.fontColor = [SKColor whiteColor];
-        mathProblemLabel.position = CGPointMake(self.size.width/2, 225);
-        [mathProblemLabel setScale:.5];
+        mathProblemLabel.position = CGPointMake(self.size.width/2, self.size.height/2 + space);
+        mathProblemLabel.yScale = 2;
+        //[mathProblemLabel setScale:.5];
         [self addChild:mathProblemLabel];
         
-        NSString * retrymessage;
-        retrymessage = @"Submit Answer";
-        SKLabelNode *retryButton = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-        retryButton.text = retrymessage;
-        retryButton.fontColor = [SKColor whiteColor];
-        retryButton.position = CGPointMake(self.size.width/2, 200);
-        retryButton.name = @"retry";
-        [retryButton setScale:.5];
+        int answerIteration = [SpriteKitCommon GenerateRandomInt:4];
         
-        [self addChild:retryButton];
-        
+        for(int i = 0; i < 4; i++){
+            
+            SKLabelNode *btnAnswer = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+            if(answerIteration == i){
+                btnAnswer.text = [NSString stringWithFormat:@"%i", currentMathProblem.answer];
+                btnAnswer.name =  @"btnAnswer";
+            }
+            else{
+                btnAnswer.text = [NSString stringWithFormat:@"%i", [SpriteKitCommon GenerateRandomInt:10]];
+                btnAnswer.name = [NSString stringWithFormat:@"btnAnswer%i", i ];
+            }
+            
+            btnAnswer.yScale = 2;
+            btnAnswer.fontColor = [SKColor whiteColor];
+            
+            btnAnswer.position = CGPointMake(self.size.width/4 + (i * 150), self.size.height/2 - (3*space));
+
+            //[btnAnswer setScale:.5];
+            
+            [self addChild:btnAnswer];
+        }
         
     }
     return self;
 }
 
-bool displayedError = false;
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInNode:self];
     SKNode *node = [self nodeAtPoint:location];
-    [mathProblemAnswer resignFirstResponder];
     
-    if ([node.name isEqualToString:@"retry"] && ([mathProblemGenerator getMathProblemAnswer] == [mathProblemAnswer.text intValue])) {
-        SKTransition *reveal = [SKTransition flipHorizontalWithDuration:0.5];
-        MyScene * scene = [MyScene sceneWithSize:self.view.bounds.size];
-        scene.scaleMode = SKSceneScaleModeAspectFill;
-        [self.view presentScene:scene transition: reveal];
-        [mathProblemAnswer removeFromSuperview];
+    
+    if ([node.name isEqualToString:@"btnAnswer"]) {
+        //If user's answer is correct.
+            SKTransition *reveal = [SKTransition flipHorizontalWithDuration:0.5];
+    
+            currentMathProblem.isCorrectAnswer = true;
+            [[UserGameData getInstance].currentUser.userMathProblems addObject: currentMathProblem];
+            [UserGameData getInstance].currentUser.numberOfCorrectAnswers+=1;
+            [self.sceneToDisplay initWithSize:self.size];
+            [self.view presentScene:self.sceneToDisplay transition: reveal];
+        
     }
-    else if(displayedError == false)
-    {
+    else{
         SKLabelNode *wrongAnswer = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         wrongAnswer.text = @"Sorry Try again!";
         wrongAnswer.fontColor = [SKColor whiteColor];
@@ -99,17 +100,10 @@ bool displayedError = false;
         [wrongAnswer setScale:.5];
         
         [self addChild:wrongAnswer];
-        
-        displayedError = true;
-        return;
+        [UserGameData getInstance].currentUser.numberOfIncorrectAnswers+=1;
     }
-    
-    displayedError = false;
    
     return;
 }
 
--(void)update:(NSTimeInterval)currentTime{
-   
-}
 @end

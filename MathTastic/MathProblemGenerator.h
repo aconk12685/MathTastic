@@ -7,14 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MathProblem.h"
 
 @interface MathProblemGenerator : NSObject
 
 @property int x;
 @property int y;
 
--(NSString *)getMathProblem;
-
--(int)getMathProblemAnswer;
+-(MathProblem *)getMathProblem;
 
 @end

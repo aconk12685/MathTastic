@@ -22,20 +22,25 @@
 		5E22054919FB92F1005013CB /* snail-shell.svg.thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053C19FB92F1005013CB /* snail-shell.svg.thumb.png */; };
 		5E22054A19FB92F1005013CB /* Swordfish.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053D19FB92F1005013CB /* Swordfish.svg.med.png */; };
 		5E22054B19FB92F1005013CB /* yellow-fish.svg.med.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E22053E19FB92F1005013CB /* yellow-fish.svg.med.png */; };
+		5E22054D19FB94E9005013CB /* OceanScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E22054C19FB94E9005013CB /* OceanScene.m */; };
+		5E22055019FB96C8005013CB /* SpriteKitCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E22054F19FB96C8005013CB /* SpriteKitCommon.m */; };
+		5E5F5A4B1A83C43B00B39D75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E5F5A4A1A83C43B00B39D75 /* Default-568h@2x.png */; };
 		5E8FE41B19EA1DB4002FE187 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE41A19EA1DB4002FE187 /* main.m */; };
 		5E8FE41E19EA1DB4002FE187 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE41D19EA1DB4002FE187 /* AppDelegate.m */; };
-		5E8FE42119EA1DB4002FE187 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE42019EA1DB4002FE187 /* GameScene.m */; };
-		5E8FE42319EA1DB4002FE187 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FE42219EA1DB4002FE187 /* GameScene.sks */; };
 		5E8FE42619EA1DB4002FE187 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE42519EA1DB4002FE187 /* GameViewController.m */; };
 		5E8FE42919EA1DB4002FE187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FE42719EA1DB4002FE187 /* Main.storyboard */; };
 		5E8FE42B19EA1DB4002FE187 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FE42A19EA1DB4002FE187 /* Images.xcassets */; };
-		5E8FE42E19EA1DB4002FE187 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E8FE42C19EA1DB4002FE187 /* LaunchScreen.xib */; };
 		5E8FE43A19EA1DB4002FE187 /* MathTasticTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE43919EA1DB4002FE187 /* MathTasticTests.m */; };
 		5E8FE45C19EA1E90002FE187 /* MathProblemGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE45519EA1E90002FE187 /* MathProblemGenerator.m */; };
 		5E8FE45D19EA1E90002FE187 /* QuestionAnswerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE45719EA1E90002FE187 /* QuestionAnswerScene.m */; };
 		5E8FE45E19EA1E90002FE187 /* TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE45919EA1E90002FE187 /* TextField.m */; };
 		5E8FE45F19EA1E90002FE187 /* FMMParallaxNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE45A19EA1E90002FE187 /* FMMParallaxNode.m */; };
 		5E8FE46219EA1EF1002FE187 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE46119EA1EF1002FE187 /* MyScene.m */; };
+		5E9DA0771A9C3B04006B3AB0 /* DefaultScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9DA0761A9C3B04006B3AB0 /* DefaultScene.m */; };
+		5E9DA0791AA2F5AB006B3AB0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9DA0781AA2F5AB006B3AB0 /* User.m */; };
+		5E9DA07C1AA2F626006B3AB0 /* MathProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9DA07B1AA2F626006B3AB0 /* MathProblem.m */; };
+		5E9DA0831AA366C0006B3AB0 /* UserGameData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9DA0821AA366C0006B3AB0 /* UserGameData.m */; };
+		5E9DA0861AA36902006B3AB0 /* BaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9DA0851AA36902006B3AB0 /* BaseScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,19 +69,20 @@
 		5E22053C19FB92F1005013CB /* snail-shell.svg.thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snail-shell.svg.thumb.png"; sourceTree = "<group>"; };
 		5E22053D19FB92F1005013CB /* Swordfish.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swordfish.svg.med.png; sourceTree = "<group>"; };
 		5E22053E19FB92F1005013CB /* yellow-fish.svg.med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow-fish.svg.med.png"; sourceTree = "<group>"; };
+		5E22054C19FB94E9005013CB /* OceanScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OceanScene.m; sourceTree = "<group>"; };
+		5E22054E19FB9507005013CB /* OceanScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OceanScene.h; sourceTree = "<group>"; };
+		5E22054F19FB96C8005013CB /* SpriteKitCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteKitCommon.m; sourceTree = "<group>"; };
+		5E22055119FB9729005013CB /* SpriteKitCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteKitCommon.h; sourceTree = "<group>"; };
+		5E5F5A4A1A83C43B00B39D75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5E8FE41519EA1DB4002FE187 /* MathTastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathTastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8FE41919EA1DB4002FE187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E8FE41A19EA1DB4002FE187 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E8FE41C19EA1DB4002FE187 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5E8FE41D19EA1DB4002FE187 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5E8FE41F19EA1DB4002FE187 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		5E8FE42019EA1DB4002FE187 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		5E8FE42219EA1DB4002FE187 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		5E8FE42419EA1DB4002FE187 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		5E8FE42519EA1DB4002FE187 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		5E8FE42819EA1DB4002FE187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E8FE42A19EA1DB4002FE187 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5E8FE42D19EA1DB4002FE187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5E8FE43319EA1DB4002FE187 /* MathTasticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathTasticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8FE43819EA1DB4002FE187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E8FE43919EA1DB4002FE187 /* MathTasticTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathTasticTests.m; sourceTree = "<group>"; };
@@ -90,6 +96,16 @@
 		5E8FE45B19EA1E90002FE187 /* FMMParallaxNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMParallaxNode.h; sourceTree = "<group>"; };
 		5E8FE46019EA1EF1002FE187 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		5E8FE46119EA1EF1002FE187 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		5E9DA0751A9C3AB9006B3AB0 /* DefaultScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultScene.h; sourceTree = "<group>"; };
+		5E9DA0761A9C3B04006B3AB0 /* DefaultScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultScene.m; sourceTree = "<group>"; };
+		5E9DA0781AA2F5AB006B3AB0 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		5E9DA07A1AA2F5BA006B3AB0 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		5E9DA07B1AA2F626006B3AB0 /* MathProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathProblem.m; sourceTree = "<group>"; };
+		5E9DA07D1AA2F633006B3AB0 /* MathProblem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathProblem.h; sourceTree = "<group>"; };
+		5E9DA0811AA3657D006B3AB0 /* UserGameData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserGameData.h; sourceTree = "<group>"; };
+		5E9DA0821AA366C0006B3AB0 /* UserGameData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGameData.m; sourceTree = "<group>"; };
+		5E9DA0841AA367D0006B3AB0 /* BaseScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseScene.h; sourceTree = "<group>"; };
+		5E9DA0851AA36902006B3AB0 /* BaseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +129,7 @@
 		5E8FE40C19EA1DB4002FE187 = {
 			isa = PBXGroup;
 			children = (
+				5E5F5A4A1A83C43B00B39D75 /* Default-568h@2x.png */,
 				5E8FE41719EA1DB4002FE187 /* MathTastic */,
 				5E8FE43619EA1DB4002FE187 /* MathTasticTests */,
 				5E8FE41619EA1DB4002FE187 /* Products */,
@@ -131,27 +148,15 @@
 		5E8FE41719EA1DB4002FE187 /* MathTastic */ = {
 			isa = PBXGroup;
 			children = (
-				5E8FE46019EA1EF1002FE187 /* MyScene.h */,
-				5E8FE46119EA1EF1002FE187 /* MyScene.m */,
-				5E8FE45419EA1E90002FE187 /* MathProblemGenerator.h */,
-				5E8FE45519EA1E90002FE187 /* MathProblemGenerator.m */,
-				5E8FE45619EA1E90002FE187 /* QuestionAnswerScene.h */,
-				5E8FE45719EA1E90002FE187 /* QuestionAnswerScene.m */,
-				5E8FE45819EA1E90002FE187 /* TextField.h */,
-				5E8FE45919EA1E90002FE187 /* TextField.m */,
-				5E8FE45A19EA1E90002FE187 /* FMMParallaxNode.m */,
-				5E8FE45B19EA1E90002FE187 /* FMMParallaxNode.h */,
+				5E9DA07F1AA2F879006B3AB0 /* Models */,
+				5E9DA07E1AA2F83D006B3AB0 /* Scenes */,
 				5E8FE44319EA1E84002FE187 /* Art */,
 				5E8FE41C19EA1DB4002FE187 /* AppDelegate.h */,
 				5E8FE41D19EA1DB4002FE187 /* AppDelegate.m */,
-				5E8FE41F19EA1DB4002FE187 /* GameScene.h */,
-				5E8FE42019EA1DB4002FE187 /* GameScene.m */,
-				5E8FE42219EA1DB4002FE187 /* GameScene.sks */,
 				5E8FE42419EA1DB4002FE187 /* GameViewController.h */,
 				5E8FE42519EA1DB4002FE187 /* GameViewController.m */,
 				5E8FE42719EA1DB4002FE187 /* Main.storyboard */,
 				5E8FE42A19EA1DB4002FE187 /* Images.xcassets */,
-				5E8FE42C19EA1DB4002FE187 /* LaunchScreen.xib */,
 				5E8FE41819EA1DB4002FE187 /* Supporting Files */,
 			);
 			path = MathTastic;
@@ -205,6 +210,44 @@
 			path = Art;
 			sourceTree = "<group>";
 		};
+		5E9DA07E1AA2F83D006B3AB0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5E9DA0751A9C3AB9006B3AB0 /* DefaultScene.h */,
+				5E9DA0761A9C3B04006B3AB0 /* DefaultScene.m */,
+				5E22054C19FB94E9005013CB /* OceanScene.m */,
+				5E22054E19FB9507005013CB /* OceanScene.h */,
+				5E8FE45619EA1E90002FE187 /* QuestionAnswerScene.h */,
+				5E8FE45719EA1E90002FE187 /* QuestionAnswerScene.m */,
+				5E8FE46019EA1EF1002FE187 /* MyScene.h */,
+				5E8FE46119EA1EF1002FE187 /* MyScene.m */,
+				5E9DA0841AA367D0006B3AB0 /* BaseScene.h */,
+				5E9DA0851AA36902006B3AB0 /* BaseScene.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		5E9DA07F1AA2F879006B3AB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E8FE45819EA1E90002FE187 /* TextField.h */,
+				5E8FE45919EA1E90002FE187 /* TextField.m */,
+				5E8FE45A19EA1E90002FE187 /* FMMParallaxNode.m */,
+				5E8FE45B19EA1E90002FE187 /* FMMParallaxNode.h */,
+				5E8FE45419EA1E90002FE187 /* MathProblemGenerator.h */,
+				5E8FE45519EA1E90002FE187 /* MathProblemGenerator.m */,
+				5E22054F19FB96C8005013CB /* SpriteKitCommon.m */,
+				5E22055119FB9729005013CB /* SpriteKitCommon.h */,
+				5E9DA0781AA2F5AB006B3AB0 /* User.m */,
+				5E9DA07A1AA2F5BA006B3AB0 /* User.h */,
+				5E9DA07B1AA2F626006B3AB0 /* MathProblem.m */,
+				5E9DA07D1AA2F633006B3AB0 /* MathProblem.h */,
+				5E9DA0811AA3657D006B3AB0 /* UserGameData.h */,
+				5E9DA0821AA366C0006B3AB0 /* UserGameData.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,6 +297,7 @@
 				TargetAttributes = {
 					5E8FE41419EA1DB4002FE187 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = MBNKBTT9F4;
 					};
 					5E8FE43219EA1DB4002FE187 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -285,19 +329,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8FE42E19EA1DB4002FE187 /* LaunchScreen.xib in Resources */,
 				5E22054B19FB92F1005013CB /* yellow-fish.svg.med.png in Resources */,
 				5E22054319FB92F1005013CB /* pescetto.svg.med.png in Resources */,
 				5E22054019FB92F1005013CB /* blue-fish_.svg.med.png in Resources */,
 				5E22054A19FB92F1005013CB /* Swordfish.svg.med.png in Resources */,
 				5E8FE42B19EA1DB4002FE187 /* Images.xcassets in Resources */,
-				5E8FE42319EA1DB4002FE187 /* GameScene.sks in Resources */,
 				5E8FE42919EA1DB4002FE187 /* Main.storyboard in Resources */,
 				5E22054919FB92F1005013CB /* snail-shell.svg.thumb.png in Resources */,
 				5E22054819FB92F1005013CB /* seaweed.svg.med.png in Resources */,
 				5E22054419FB92F1005013CB /* plain-fish.svg.med.png in Resources */,
 				5E22051A19FB8679005013CB /* sea-turtle.png in Resources */,
 				5E22054119FB92F1005013CB /* clownfish.svg.med.png in Resources */,
+				5E5F5A4B1A83C43B00B39D75 /* Default-568h@2x.png in Resources */,
 				5E22054619FB92F1005013CB /* red-starfish.svg.med.png in Resources */,
 				5E22054219FB92F1005013CB /* fishing-pole-md.png in Resources */,
 				5E22054719FB92F1005013CB /* seahorse.svg.med.png in Resources */,
@@ -321,15 +364,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E9DA0831AA366C0006B3AB0 /* UserGameData.m in Sources */,
+				5E9DA07C1AA2F626006B3AB0 /* MathProblem.m in Sources */,
 				5E8FE46219EA1EF1002FE187 /* MyScene.m in Sources */,
+				5E9DA0861AA36902006B3AB0 /* BaseScene.m in Sources */,
 				5E8FE45D19EA1E90002FE187 /* QuestionAnswerScene.m in Sources */,
 				5E8FE42619EA1DB4002FE187 /* GameViewController.m in Sources */,
+				5E22055019FB96C8005013CB /* SpriteKitCommon.m in Sources */,
+				5E9DA0771A9C3B04006B3AB0 /* DefaultScene.m in Sources */,
 				5E8FE45E19EA1E90002FE187 /* TextField.m in Sources */,
 				5E8FE45C19EA1E90002FE187 /* MathProblemGenerator.m in Sources */,
 				5E8FE41E19EA1DB4002FE187 /* AppDelegate.m in Sources */,
-				5E8FE42119EA1DB4002FE187 /* GameScene.m in Sources */,
+				5E9DA0791AA2F5AB006B3AB0 /* User.m in Sources */,
 				5E8FE41B19EA1DB4002FE187 /* main.m in Sources */,
 				5E8FE45F19EA1E90002FE187 /* FMMParallaxNode.m in Sources */,
+				5E22054D19FB94E9005013CB /* OceanScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,14 +407,6 @@
 				5E8FE42819EA1DB4002FE187 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5E8FE42C19EA1DB4002FE187 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E8FE42D19EA1DB4002FE187 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -405,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -441,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,9 +494,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Conk (9KCKPZYPL3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrew Conk (9KCKPZYPL3)";
 				INFOPLIST_FILE = MathTastic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -463,9 +508,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Conk (9KCKPZYPL3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrew Conk (9KCKPZYPL3)";
 				INFOPLIST_FILE = MathTastic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

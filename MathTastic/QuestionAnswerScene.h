@@ -2,4 +2,6 @@
 
 @interface QuestionAnswerScene : SKScene
 
+@property SKScene *sceneToDisplay;
+
 @end

@@ -1,10 +1,9 @@
 //
 //  TextField.m
-//  GameTutorial
+//  MathTastic
 //
-//  Created by Andrew Conk on 9/13/14.
-//  Copyright (c) 2014 MEGHA GULATI. All rights reserved.
-//
+//  Created by Andrew Conk on 10/25/14.
+//  Copyright (c) 2014 Andrew Conk. All rights reserved.
 
 #import "TextField.h"
 

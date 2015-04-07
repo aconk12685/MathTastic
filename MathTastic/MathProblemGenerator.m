@@ -7,20 +7,21 @@
 //
 
 #import "MathProblemGenerator.h"
-#import <stdlib.h>
+
 
 @implementation MathProblemGenerator
 
--(NSString *)getMathProblem{
-    self.x = arc4random_uniform(10);
-    self.y = arc4random_uniform(10);
+-(MathProblem *)getMathProblem{
+    MathProblem *mathProblem = [[MathProblem alloc] initMathProblem];
     
-    return [NSString stringWithFormat:@"%d + %d = ", self.x, self.y];
-}
+    int x = arc4random_uniform(10);
+    int y = arc4random_uniform(10);
 
--(int)getMathProblemAnswer{
+    mathProblem.question = [NSString stringWithFormat:@"%d + %d = ", x, y];
+    mathProblem.answer = x+y;
+    mathProblem.isCorrectAnswer = false;
     
-    return self.x + self.y;
+    return mathProblem;
 }
 
 @end
