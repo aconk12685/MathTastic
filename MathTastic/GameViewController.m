@@ -7,7 +7,7 @@
 //
 
 #import "GameViewController.h"
-#import "MyScene.h"
+#import "SpaceScene.h"
 #import "OceanScene.h"
 #import "DefaultScene.h"
 
@@ -58,9 +58,9 @@
     if(self.StartGame){
         SKView * view = (SKView *)self.view;
        
-        MyScene * myScene = [[MyScene alloc] initWithSize:CGSizeMake(768,1024)];;
+        SpaceScene * spaceScene = [[SpaceScene alloc] initWithSize:CGSizeMake(768,1024)];;
         @try {
-            [view presentScene: myScene];        }
+            [view presentScene: spaceScene];        }
         @catch (NSException *exception) {
             NSLog(exception.callStackSymbols);
             NSLog(exception.description);

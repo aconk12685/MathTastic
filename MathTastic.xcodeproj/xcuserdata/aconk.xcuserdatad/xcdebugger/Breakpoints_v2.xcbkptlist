@@ -26,13 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MathTastic/FMMParallaxNode.m"
-            timestampString = "436248022.276945"
+            timestampString = "450152356.748088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "-update:"
-            landmarkType = "5">
+            startingLineNumber = "109"
+            endingLineNumber = "109">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +40,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MathTastic/FMMParallaxNode.m"
-            timestampString = "436248022.276945"
+            timestampString = "450152356.748088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "-update:"
-            landmarkType = "5">
+            startingLineNumber = "108"
+            endingLineNumber = "108">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,29 +54,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MathTastic/FMMParallaxNode.m"
-            timestampString = "436248022.276945"
+            timestampString = "450152356.748088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "-update:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MathTastic/FMMParallaxNode.m"
-            timestampString = "436248022.276945"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "-update:"
-            landmarkType = "5">
+            startingLineNumber = "111"
+            endingLineNumber = "111">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -91,13 +69,11 @@
             condition = "self.position.x &lt; 0"
             continueAfterRunningActions = "No"
             filePath = "MathTastic/FMMParallaxNode.m"
-            timestampString = "436248022.276945"
+            timestampString = "450152356.748088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "-update:"
-            landmarkType = "5">
+            startingLineNumber = "102"
+            endingLineNumber = "102">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -154,7 +130,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MathTastic/MyScene.m"
+            filePath = "MathTastic/SpaceScene.m"
             timestampString = "446917374.746226"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -298,12 +274,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MathTastic/MyScene.m"
-            timestampString = "447131520.97135"
+            filePath = "MathTastic/SpaceScene.m"
+            timestampString = "450152356.748088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "-didBeginContact:"
             landmarkType = "5">
          </BreakpointContent>
@@ -314,12 +290,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MathTastic/MyScene.m"
-            timestampString = "447131520.97135"
+            filePath = "MathTastic/SpaceScene.m"
+            timestampString = "450152356.748088"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
             landmarkName = "-didBeginContact:"
             landmarkType = "5">
          </BreakpointContent>
@@ -330,7 +306,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MathTastic/MyScene.m"
+            filePath = "MathTastic/SpaceScene.m"
             timestampString = "447131520.97135"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -346,7 +322,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MathTastic/MyScene.m"
+            filePath = "MathTastic/SpaceScene.m"
             timestampString = "447131520.97135"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -362,7 +338,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MathTastic/MyScene.m"
+            filePath = "MathTastic/SpaceScene.m"
             timestampString = "447131520.97135"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -379,7 +355,7 @@
             ignoreCount = "0"
             condition = "[[_selectedNode name] isEqualToString:@&quot;ship&quot;]"
             continueAfterRunningActions = "No"
-            filePath = "MathTastic/MyScene.m"
+            filePath = "MathTastic/SpaceScene.m"
             timestampString = "447131520.97135"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -395,7 +371,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MathTastic/MyScene.m"
+            filePath = "MathTastic/SpaceScene.m"
             timestampString = "447131520.97135"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -427,7 +403,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MathTastic/MyScene.m"
+            filePath = "MathTastic/SpaceScene.m"
             timestampString = "447131673.211415"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -459,7 +435,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MathTastic/MyScene.m"
+            filePath = "MathTastic/SpaceScene.m"
             timestampString = "447131977.295248"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"

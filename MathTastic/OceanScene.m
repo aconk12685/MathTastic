@@ -149,23 +149,18 @@ static const float OBJECT_VELOCITY = 160.0;
 }
 
 -(void)initalizingScrollingBackground:(CGSize)size{
-    //1
     NSArray *parallaxBackgroundNames = @[@"clownfish.svg.med.png", @"pescetto.svg.med.png"];
     CGSize planetSizes = CGSizeMake(50, 50);
-    //2
+
     _parallaxNodeBackgrounds = [[FMMParallaxNode alloc] initWithBackgrounds: @"bgFish"
                                                                       files:parallaxBackgroundNames
                                                                        size:planetSizes
                                                        pointsPerSecondSpeed:60];
-    //3
+
     _parallaxNodeBackgrounds.position = CGPointMake(size.width/2.0, size.height/2.0);
-    //4
-    [_parallaxNodeBackgrounds randomizeNodesPositions];
     
-    //5
     [self addChild:_parallaxNodeBackgrounds];
     
-    //6
     NSArray *parallaxBackground2Names = @[@"red-fish.svg.med.png", @"red-starfish.svg.med.png"];
     _parallaxSpaceDust = [[FMMParallaxNode alloc] initWithBackgrounds: @"bgFish2"
                                                                 files:parallaxBackground2Names
@@ -173,7 +168,6 @@ static const float OBJECT_VELOCITY = 160.0;
                                                  pointsPerSecondSpeed:100];
     _parallaxSpaceDust.position = CGPointMake(0, 0);
     [self addChild:_parallaxSpaceDust];
-    
 }
 
 - (void)moveObstacle

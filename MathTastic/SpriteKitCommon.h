@@ -12,5 +12,6 @@
 @interface SpriteKitCommon : NSObject
 + (CGPoint) CGPointAdd:(CGPoint)a toB:(CGPoint)b;
 + (CGPoint) CGPointMultiplyScalar:(CGPoint) a timesB:(CGFloat) b;
-+ (int) GenerateRandomInt:(int)upperBound;
++ (int) generateRandomInt:(int)upperBound;
+- (CGFloat)randomValueBetween:(CGFloat)low andValue:(CGFloat)high;
 @end

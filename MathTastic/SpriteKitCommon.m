@@ -18,8 +18,15 @@
     return CGPointMake(a.x * b, a.y * b);
 }
 
-+ (int) GenerateRandomInt:(int) upperBound{
++ (int) generateRandomInt:(int) upperBound{
     int x = arc4random_uniform(upperBound);
     return x;
 }
+
+// Add new method, above update loop
+- (CGFloat)randomValueBetween:(CGFloat)low andValue:(CGFloat)high {
+    return (((CGFloat) arc4random() / 0xFFFFFFFFu) * (high - low)) + low;
+}
+
+
 @end

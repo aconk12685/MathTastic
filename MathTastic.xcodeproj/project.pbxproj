@@ -35,7 +35,7 @@
 		5E8FE45D19EA1E90002FE187 /* QuestionAnswerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE45719EA1E90002FE187 /* QuestionAnswerScene.m */; };
 		5E8FE45E19EA1E90002FE187 /* TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE45919EA1E90002FE187 /* TextField.m */; };
 		5E8FE45F19EA1E90002FE187 /* FMMParallaxNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE45A19EA1E90002FE187 /* FMMParallaxNode.m */; };
-		5E8FE46219EA1EF1002FE187 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE46119EA1EF1002FE187 /* MyScene.m */; };
+		5E8FE46219EA1EF1002FE187 /* SpaceScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8FE46119EA1EF1002FE187 /* SpaceScene.m */; };
 		5E9DA0771A9C3B04006B3AB0 /* DefaultScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9DA0761A9C3B04006B3AB0 /* DefaultScene.m */; };
 		5E9DA0791AA2F5AB006B3AB0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9DA0781AA2F5AB006B3AB0 /* User.m */; };
 		5E9DA07C1AA2F626006B3AB0 /* MathProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9DA07B1AA2F626006B3AB0 /* MathProblem.m */; };
@@ -94,8 +94,8 @@
 		5E8FE45919EA1E90002FE187 /* TextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextField.m; sourceTree = "<group>"; };
 		5E8FE45A19EA1E90002FE187 /* FMMParallaxNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMMParallaxNode.m; sourceTree = "<group>"; };
 		5E8FE45B19EA1E90002FE187 /* FMMParallaxNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMMParallaxNode.h; sourceTree = "<group>"; };
-		5E8FE46019EA1EF1002FE187 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
-		5E8FE46119EA1EF1002FE187 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		5E8FE46019EA1EF1002FE187 /* SpaceScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceScene.h; sourceTree = "<group>"; };
+		5E8FE46119EA1EF1002FE187 /* SpaceScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceScene.m; sourceTree = "<group>"; };
 		5E9DA0751A9C3AB9006B3AB0 /* DefaultScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultScene.h; sourceTree = "<group>"; };
 		5E9DA0761A9C3B04006B3AB0 /* DefaultScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultScene.m; sourceTree = "<group>"; };
 		5E9DA0781AA2F5AB006B3AB0 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
@@ -219,8 +219,8 @@
 				5E22054E19FB9507005013CB /* OceanScene.h */,
 				5E8FE45619EA1E90002FE187 /* QuestionAnswerScene.h */,
 				5E8FE45719EA1E90002FE187 /* QuestionAnswerScene.m */,
-				5E8FE46019EA1EF1002FE187 /* MyScene.h */,
-				5E8FE46119EA1EF1002FE187 /* MyScene.m */,
+				5E8FE46019EA1EF1002FE187 /* SpaceScene.h */,
+				5E8FE46119EA1EF1002FE187 /* SpaceScene.m */,
 				5E9DA0841AA367D0006B3AB0 /* BaseScene.h */,
 				5E9DA0851AA36902006B3AB0 /* BaseScene.m */,
 			);
@@ -366,7 +366,7 @@
 			files = (
 				5E9DA0831AA366C0006B3AB0 /* UserGameData.m in Sources */,
 				5E9DA07C1AA2F626006B3AB0 /* MathProblem.m in Sources */,
-				5E8FE46219EA1EF1002FE187 /* MyScene.m in Sources */,
+				5E8FE46219EA1EF1002FE187 /* SpaceScene.m in Sources */,
 				5E9DA0861AA36902006B3AB0 /* BaseScene.m in Sources */,
 				5E8FE45D19EA1E90002FE187 /* QuestionAnswerScene.m in Sources */,
 				5E8FE42619EA1DB4002FE187 /* GameViewController.m in Sources */,

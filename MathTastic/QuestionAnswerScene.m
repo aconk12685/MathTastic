@@ -4,7 +4,7 @@
 //
 
 #import "QuestionAnswerScene.h"
-#import "MyScene.h"
+#import "SpaceScene.h"
 #import "TextField.h"
 #import "MathProblemGenerator.h"
 #import "MathProblem.h"
